@@ -1,0 +1,24 @@
+package system; 
+class Box{
+	int length;
+	int breadth;
+
+	Box(int l,int b){
+		length=l;
+		breadth =b;
+	}
+int area() {
+	 return length*breadth;
+ }
+}
+class Box3D extends Box{
+	int height;
+
+Box3D(int l,int b,int h){
+	super(l,b);
+	height=h;
+}
+int volume() {
+	return length*breadth*height;
+}
+}
